@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="IEDriver" Version="2.0.0" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.8.0" />
+    <PackageReference Include="MSTest.TestAdapter" Version="1.3.2" />
+    <PackageReference Include="MSTest.TestFramework" Version="1.3.2" />
+    <PackageReference Include="QAPOW_SeleniumCSharp_CommonUtils" Version="1.0.18137.3" />
+    <PackageReference Include="QAPOW_SeleniumCSharp_DriverUtils" Version="1.0.18215.1" />
+    <PackageReference Include="QAPOW_SeleniumCSharp_UIUtils" Version="1.0.18227.1" />
+    <PackageReference Include="Selenium.Chrome.WebDriver" Version="2.39.0" />
+    <PackageReference Include="Selenium.InternetExplorer.WebDriver" Version="3.14.0" />
+    <PackageReference Include="Selenium.Support" Version="3.14.0" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="2.39.0" />
+    <PackageReference Include="Selenium.WebDriver.IEDriver" Version="3.14.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="APITests\" />
+    <Folder Include="Drivers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="chromedriver.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="IEDriverServer.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
